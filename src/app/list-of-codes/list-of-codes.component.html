@@ -1,0 +1,14 @@
+<p>
+  list-of-codes works!
+</p>
+<Form>
+  <input type="text" #NO placeholder="NO">
+  <input type="text" #Subject placeholder="Subject">
+  <input type="text" #TCode placeholder="TCode">
+  <button type="button" (click)="AddnewC(NO,Subject,TCode)">Add</button>
+</Form>
+<ul>
+    <li *ngFor="let code of NewCodes">
+      <app-codes [NewCode]="code"></app-codes>
+    </li>
+</ul>
